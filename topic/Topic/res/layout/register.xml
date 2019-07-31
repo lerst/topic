@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/testid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/button2"
+        android:layout_alignLeft="@+id/button1"
+        android:layout_alignRight="@+id/button2"
+        android:layout_alignStart="@+id/button1"
+        android:layout_below="@+id/button1"
+        android:layout_marginTop="29dp"
+        android:text="" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:text="@string/enterworld" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:text="@string/choose"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button2"
+        android:layout_alignBottom="@+id/button2"
+        android:layout_alignEnd="@+id/button3"
+        android:layout_alignRight="@+id/button3"
+        android:layout_marginEnd="51dp"
+        android:layout_marginRight="51dp"
+        android:background="#0000FF"
+        android:text="@string/camp2"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button3"
+        android:layout_alignStart="@+id/button3"
+        android:layout_below="@+id/textView3"
+        android:layout_marginLeft="52dp"
+        android:layout_marginStart="20dp"
+        android:background="#FF3333"
+        android:text="@string/camp1"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="135dp"
+        android:text="@string/entername"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/TextView02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/TextView01"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="20dp"
+        android:text="@string/enterid"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/idedit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/TextView02"
+        android:layout_alignLeft="@+id/pwdedit"
+        android:layout_alignParentEnd="true"
+        android:ems="10"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editText1"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="20dp"
+        android:layout_toLeftOf="@+id/pwdedit"
+        android:text="@string/enterpwd"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/pwdedit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/TextView01"
+        android:layout_alignParentEnd="true"
+        android:layout_alignRight="@+id/textView3"
+        android:layout_toEndOf="@+id/textView2"
+        android:ems="10"
+        android:inputType="text" >
+    </EditText>
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_toEndOf="@+id/textView2"
+        android:ems="10"
+        android:inputType="text" />
+
+</RelativeLayout>

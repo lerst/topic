@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+   
+
+    <TextView
+        android:id="@+id/shopname"
+        android:layout_width="100dp"
+        android:layout_height="200dp"
+        android:layout_alignBottom="@+id/sell"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/shopname" />
+
+    <Button
+        android:id="@+id/buy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/buy" />
+
+    <Button
+        android:id="@+id/buyorsell"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageView1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="19dp"
+        android:text="@string/buyorsell" />
+
+    <Button
+        android:id="@+id/sell"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/buy"
+        android:layout_toEndOf="@+id/buy"
+        android:text="@string/sell" />
+
+    <TextView
+        android:id="@+id/effectstring"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearlayoutdown"
+        android:layout_alignLeft="@+id/effect"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@+id/sell"
+        android:layout_below="@+id/effect"
+        android:text="" />
+    
+    <LinearLayout
+        android:id="@+id/linearlayoutdown"
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/black" >
+
+   <ImageButton
+       android:id="@+id/status"
+       style="android:attr/borderlessButtonStyle"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_margin="2dp"
+       android:layout_weight="1"
+       android:background="#00000000"
+       android:contentDescription="@string/app_name"
+       android:scaleType="fitXY"
+       android:src="@drawable/juggler" />
+
+        <ImageButton
+            android:id="@+id/bag"
+            style="android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitXY"
+            android:src="@drawable/bag" />
+
+        <ImageButton
+            android:id="@+id/mission"
+            style="android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitXY"
+            android:src="@drawable/mission" />
+
+        <ImageButton
+            android:id="@+id/skill"
+            style="android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitXY"
+            android:src="@drawable/magic" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/sellmoney"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/buyorsell"
+        android:layout_alignLeft="@+id/shopname"
+        android:layout_alignStart="@+id/shopname"
+        android:text="@string/sellmoney"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/sellmoney"
+        android:layout_toRightOf="@+id/sellmoney"
+        android:layout_toEndOf="@+id/sellmoney"
+        android:text=""
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/buyorsell"
+        android:layout_toRightOf="@+id/imageView1"
+         android:layout_toEndOf="@+id/imageView1"
+        android:text="@string/name"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/itemname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/name"
+        android:layout_alignBottom="@+id/name"
+        android:layout_toRightOf="@+id/name"
+        android:layout_toEndOf="@+id/name"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/effect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/name"
+        android:layout_alignStart="@+id/sellmoney"
+        android:layout_alignTop="@+id/imageView1"
+        android:text="@string/effect" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_above="@+id/linearlayoutdown"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/app_name"
+        android:visibility="invisible" />
+
+    <GridView
+        android:id="@+id/shopgrid"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_above="@+id/buyorsell"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/shopname"
+        android:columnWidth="100dp"
+        android:numColumns="4"
+        android:stretchMode="columnWidth" >
+
+    </GridView>
+
+    <TextView
+        android:id="@+id/namestring"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/name"
+        android:layout_alignLeft="@+id/itemname"
+        android:layout_alignStart="@+id/itemname" 
+        android:text="" />
+
+    <TextView
+        android:id="@+id/pricestring"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/sellmoney"
+        android:layout_toRightOf="@+id/sellmoney"
+        android:layout_toEndOf="@+id/sellmoney"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/playermoney"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/shopgrid"
+        android:layout_toRightOf="@+id/sell"
+        android:text="持有金錢:100000金幣" />
+    
+</RelativeLayout>

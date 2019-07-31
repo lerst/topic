@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearlayoutup"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/itembutton"
+            style="android:attr/borderlessButtonStyle"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/item" />
+
+        <Button
+            android:id="@+id/weaponbutton"
+            style="android:attr/borderlessButtonStyle"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/weapon" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="200" >
+
+        <TextView
+            android:id="@+id/itemname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/itemeffect"
+            android:layout_alignStart="@+id/itemeffect"
+            android:layout_alignTop="@+id/cd"
+            android:text="@string/bagitemname"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/namestring"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/itemname"
+            android:layout_alignStart="@+id/itemname"
+            android:layout_below="@+id/itemname" />
+
+        <TextView
+            android:id="@+id/itemeffect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/namestring"
+            android:layout_centerHorizontal="true"
+            android:text="@string/itemeffect" />
+
+        <TextView
+            android:id="@+id/contentstring"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/itemeffect"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignStart="@+id/itemeffect"
+            android:layout_alignTop="@+id/ski1"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/wscontent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/ski1"
+            android:layout_toEndOf="@+id/equip"
+            android:layout_toRightOf="@+id/equip"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/cd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/bagimage"
+            android:layout_toEndOf="@+id/itemeffect"
+            android:layout_toRightOf="@+id/itemeffect"
+            android:text="@string/cdb" />
+
+        <TextView
+            android:id="@+id/cdstring"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/cd"
+            android:layout_alignStart="@+id/cd"
+            android:layout_alignTop="@+id/namestring" />
+
+        <ImageButton
+            android:id="@+id/ski1"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignLeft="@+id/itemeffect"
+            android:layout_alignStart="@+id/itemeffect"
+            android:layout_below="@+id/itemeffect"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitXY"
+            android:src="@drawable/wsk001"
+            android:visibility="invisible" />
+
+        <ImageButton
+            android:id="@+id/ski2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_below="@+id/itemeffect"
+            android:layout_toEndOf="@+id/ski1"
+            android:layout_toRightOf="@+id/ski1"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitXY"
+            android:src="@drawable/wsk002"
+            android:visibility="invisible" />
+
+        <ImageButton
+            android:id="@+id/ski3"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_below="@+id/itemeffect"
+            android:layout_toEndOf="@+id/ski2"
+            android:layout_toRightOf="@+id/ski2"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitXY"
+            android:src="@drawable/wsk003"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/bagimage"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/equip"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_launcher"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/equip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:text="@string/equip" />
+
+        <GridView
+            android:id="@+id/baggrid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/equip"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:columnWidth="50dp"
+            android:numColumns="4"
+            android:stretchMode="columnWidth" >
+
+        </GridView>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="33"
+        android:background="@color/black"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/status"
+            style="android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitXY"
+            android:src="@drawable/juggler" />
+
+        <ImageButton
+            android:id="@+id/bag"
+            style="android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitXY"
+            android:src="@drawable/bag" />
+
+        <ImageButton
+            android:id="@+id/mission"
+            style="android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitXY"
+            android:src="@drawable/mission" />
+
+        <ImageButton
+            android:id="@+id/skill"
+            style="android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitXY"
+            android:src="@drawable/magic" />
+    </LinearLayout>
+
+</LinearLayout>

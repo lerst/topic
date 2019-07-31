@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="100" >
+
+        <TextView
+            android:id="@+id/allskill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/allskill"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/skillname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/allskill"
+            android:layout_marginTop="160dp"
+            android:text="@string/skillname"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/cd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/skillname"
+            android:layout_alignBottom="@+id/skillname"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="66dp"
+            android:layout_marginRight="65dp"
+            android:text="@string/cd"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/cd"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/allskill"
+            android:gravity="start"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/lightyellow"
+                android:orientation="horizontal" >
+
+                <ImageButton
+                    android:id="@+id/magic1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="@color/lightyellow"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ma001"
+                    android:visibility="invisible" />
+
+                <ImageButton
+                    android:id="@+id/magic2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_weight="1"
+                    android:background="@color/lightyellow"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ma001"
+                    android:visibility="invisible" />
+
+                <ImageButton
+                    android:id="@+id/magic3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_weight="1"
+                    android:background="@color/lightyellow"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ma001"
+                    android:visibility="invisible" />
+
+                <ImageButton
+                    android:id="@+id/magic4"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="@color/lightyellow"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ma001"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/lightyellow"
+                android:orientation="horizontal" >
+
+                <ImageButton
+                    android:id="@+id/magic5"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="@color/lightyellow"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ma001"
+                    android:visibility="invisible" />
+
+                <ImageButton
+                    android:id="@+id/magic6"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_weight="1"
+                    android:background="@color/lightyellow"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ma001"
+                    android:visibility="invisible" />
+
+                <ImageButton
+                    android:id="@+id/magic7"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_weight="1"
+                    android:background="@color/lightyellow"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ma001"
+                    android:visibility="invisible" />
+
+                <ImageButton
+                    android:id="@+id/magic8"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="@color/lightyellow"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ma001"
+                    android:visibility="invisible" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_alignEnd="@+id/cost"
+            android:layout_alignRight="@+id/cost"
+            android:layout_below="@+id/cost"
+            android:layout_marginTop="64dp"
+            android:layout_toEndOf="@+id/skilldmg"
+            android:layout_toRightOf="@+id/skilldmg"
+            android:background="@color/lightyellow"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/eqmagic1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="@color/lightyellow"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitXY"
+                android:src="@drawable/equshape" />
+
+            <ImageButton
+                android:id="@+id/eqmagic2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_weight="1"
+                android:background="@color/lightyellow"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitXY"
+                android:src="@drawable/padlock" />
+
+            <ImageButton
+                android:id="@+id/eqmagic3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="@color/lightyellow"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitXY"
+                android:src="@drawable/padlock" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/linearLayout3"
+            android:layout_alignRight="@+id/linearLayout3"
+            android:layout_below="@+id/linearLayout3"
+            android:text="@string/aceq" />
+
+        <TextView
+            android:id="@+id/skilldmg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/skillname"
+            android:text="@string/skilldmg"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/magicname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/linearLayout3"
+            android:layout_alignStart="@+id/linearLayout3"
+            android:layout_alignTop="@+id/skillname"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/cost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/cd"
+            android:layout_alignStart="@+id/cd"
+            android:layout_below="@+id/cd"
+            android:text="@string/cost"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/magiccd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/cd"
+            android:layout_toEndOf="@+id/cost"
+            android:layout_toRightOf="@+id/cost"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/magiccost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/cost"
+            android:layout_toEndOf="@+id/cost"
+            android:layout_toRightOf="@+id/cost"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/magicdmg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/magicname"
+            android:layout_toEndOf="@+id/allskill"
+            android:layout_toRightOf="@+id/allskill"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/magiccontent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/skilldmg"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearlayoutdown"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="15"
+        android:background="@color/black" >
+
+        <ImageButton
+            android:id="@+id/status"
+            style="android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitXY"
+            android:src="@drawable/juggler" />
+
+        <ImageButton
+            android:id="@+id/bag"
+            style="android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitXY"
+            android:src="@drawable/bag" />
+
+        <ImageButton
+            android:id="@+id/mission"
+            style="android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitXY"
+            android:src="@drawable/mission" />
+
+        <ImageButton
+            android:id="@+id/skill"
+            style="android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitXY"
+            android:src="@drawable/magic" />
+</LinearLayout>
+
+</LinearLayout>

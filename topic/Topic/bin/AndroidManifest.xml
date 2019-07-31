@@ -1,0 +1,73 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.fcu.topic"
+    android:versionCode="1"
+    android:versionName="1.0" >
+    
+  <uses-feature
+     android:glEsVersion="0x00020000" android:required="true"/>
+    
+    <uses-sdk
+        android:minSdkVersion="17"
+        android:targetSdkVersion="21" />
+    
+    <permission android:name="edu.fcu.topic.permission.MAPS_RECEIVE"/>
+    
+    <uses-permission android:name="android.permission.INTERNET"/>
+	<uses-permission android:name="android.permission.RESTART_PACKAGES" />
+	<uses-permission android:name="android.permission.VIBRATE"/>
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name=".global_var"
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        
+        <activity
+            android:name="edu.fcu.topic.firstin"
+            android:label="@string/app_name" >
+            
+                    <intent-filter>
+					  <action android:name = "android.intent.action.MAIN"/>
+                      <category android:name = "android.intent.category.LAUNCHER"/>
+					</intent-filter>
+
+        </activity>
+        
+           
+       	 <meta-data
+         android:name="com.google.android.maps.v2.API_KEY"
+         android:value="AIzaSyD2Y_4qSiMZcCQ7QqEGTk6FdCztoIr6nAU" />
+        
+         <!--            
+         AIzaSyD2Y_4qSiMZcCQ7QqEGTk6FdCztoIr6nAU for another mobile AIzaSyCzbQH2lbbp245RDtp1zC45fDYfzqXHTK0 for test
+         -->
+        
+		<meta-data
+           android:name="com.google.android.gms.version"
+           android:value="@integer/google_play_services_version" />
+		
+		<activity android:name="battle"></activity>
+		<activity android:name="map"></activity>
+		<activity android:name="magic"></activity>
+		<activity android:name="status"></activity>
+		<activity android:name="shop"></activity>
+		<activity android:name="mission"></activity>
+		<activity android:name="bag"></activity>
+		<activity android:name="DBCRATE"></activity>
+		<activity android:name="login"></activity>
+        <activity android:name="register"></activity>
+		<activity android:name="loading"></activity>
+		<activity android:name="rewardpage"></activity>
+		
+    </application>
+    
+
+</manifest>

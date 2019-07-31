@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="400dp"
+    android:layout_height="200dp" >
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="48dp"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/no"
+        android:layout_alignBottom="@+id/no"
+        android:layout_alignRight="@+id/spinner1"
+        android:text="@string/def"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/no"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/donate" />
+
+    <Button
+        android:id="@+id/donate"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/spinner1"
+        android:layout_toRightOf="@+id/needresource"
+        android:text="@string/donate" />
+
+    <TextView
+        android:id="@+id/neresource"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/donate"
+        android:layout_alignBottom="@+id/donate"
+        android:layout_marginLeft="34dp"
+        android:layout_toRightOf="@+id/batnum"
+        android:text="100" />
+
+    <TextView
+        android:id="@+id/needresource"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/batnum"
+        android:layout_alignBottom="@+id/batnum"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/batnum"
+        android:text="@string/needresource"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/freenum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/spinner1"
+        android:layout_marginRight="15dp"
+        android:layout_toLeftOf="@+id/title"
+        android:text="@string/nowfreenum"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/freenum"
+        android:layout_below="@+id/spinner1"
+        android:text="@string/nowresource" />
+
+    <TextView
+        android:id="@+id/nowreousrcevalue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView1"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_alignLeft="@+id/title"
+        android:layout_marginLeft="24dp"
+        android:text="1000" />
+
+    <TextView
+        android:id="@+id/batnum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/title"
+        android:layout_alignTop="@+id/spinner1"
+        android:text="@string/nowbatnum"
+        android:textSize="12sp" />
+
+</RelativeLayout>

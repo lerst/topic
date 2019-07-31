@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical" >
+
+    <Button
+        android:id="@+id/windowbattle"
+        android:layout_width="100dp"
+        android:layout_height="75dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/guardnum"
+        android:text="@string/enter" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:text=""
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/camp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/snippet"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/guardnum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/camp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/snippet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/title"
+        android:text="" />
+
+</RelativeLayout>

@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+	<RelativeLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="0dp"
+	    android:layout_weight="100" >
+
+    <ImageView
+        android:id="@+id/item1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/item0"
+        android:layout_alignStart="@+id/item0"
+        android:layout_below="@+id/item0"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/ic_launcher"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/item2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/item1"
+        android:layout_alignStart="@+id/item1"
+        android:layout_below="@+id/item1"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/ic_launcher"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/item3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/item2"
+        android:layout_alignStart="@+id/item2"
+        android:layout_below="@+id/item2"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/ic_launcher"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/skill3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/skill2"
+        android:layout_alignStart="@+id/skill2"
+        android:layout_below="@+id/skill2"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/ic_launcher"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/skill1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/skill2"
+        android:layout_alignLeft="@+id/skill0"
+        android:layout_alignStart="@+id/skill0"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/ic_launcher"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/skill2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/skill1"
+        android:layout_alignStart="@+id/skill1"
+        android:layout_below="@+id/item1"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/ic_launcher"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/namestring"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="XX"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/hp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/namestring"
+        android:text="@string/blood"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/exp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/hp"
+        android:text="@string/expname"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/camp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/exp"
+        android:text="@string/campname"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/level"
+        android:text="@string/moneyname"
+        android:textSize="25sp" />
+
+    <ImageView
+        android:id="@+id/weapon1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/weapon0"
+        android:layout_alignStart="@+id/weapon0"
+        android:layout_below="@+id/skill0"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/ic_launcher"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/lvstring"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/level"
+        android:layout_alignBottom="@+id/level"
+        android:layout_toRightOf="@+id/exp"
+        android:layout_toEndOf="@+id/exp" 
+        android:text="10"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/level"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/camp"
+        android:text="@string/lvname"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/expstring"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/exp"
+        android:layout_toEndOf="@+id/namestring"
+        android:layout_toRightOf="@+id/lvstring"
+        android:text="100/100"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/weapon0"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_alignBaseline="@+id/skill0"
+        android:layout_alignBottom="@+id/skill0"
+        android:layout_alignLeft="@+id/lvstring"
+        android:layout_alignStart="@+id/lvstring"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/weapon"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/skill0"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/nowuse"
+        android:layout_toRightOf="@+id/weapon0"
+        android:layout_toEndOf="@+id/weapon0"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/skill"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/item0"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/weapon1"
+        android:layout_toRightOf="@+id/skill0"
+        android:layout_toEndOf="@+id/skill0"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/item"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/nowuse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/resource"
+        android:layout_marginTop="19dp"
+        android:layout_toRightOf="@+id/weapon1"
+        android:layout_toEndOf="@+id/weapon1"
+        android:text="@string/nowuse"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/mp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/namestring"
+        android:layout_alignRight="@+id/skill0"
+        android:layout_below="@+id/namestring"
+        android:text="@string/mana"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/resource"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/skill0"
+        android:layout_alignEnd="@+id/skill0"
+        android:layout_below="@+id/lvstring"
+        android:text="@string/resourcename"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/hpstring"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/hp"
+        android:layout_alignBottom="@+id/hp"
+        android:layout_alignRight="@+id/weapon0"
+        android:layout_alignEnd="@+id/weapon0"
+        android:text="100/100"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/campstring"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/camp"
+        android:layout_alignBottom="@+id/camp"
+        android:layout_toRightOf="@+id/weapon1"
+        android:layout_toEndOf="@+id/weapon1"
+        android:text="藍軍"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/resourcestring"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/resource"
+        android:layout_alignBottom="@+id/resource"
+        android:layout_toRightOf="@+id/nowuse"
+        android:layout_toEndOf="@+id/nowuse"
+        android:text="1000"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/mpstring"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/mp"
+        android:layout_alignBottom="@+id/mp"
+        android:layout_alignLeft="@+id/resourcestring"
+        android:layout_alignStart="@+id/resourcestring"
+        android:text="100/100"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/moneystring"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/money"
+        android:layout_alignBottom="@+id/money"
+        android:layout_alignStart="@+id/hpstring"
+        android:layout_toRightOf="@+id/money"
+        android:text="10000"
+        android:textSize="20sp" />
+
+</RelativeLayout>
+
+	<LinearLayout
+	    android:id="@+id/linearlayoutdown"
+	    android:layout_width="fill_parent"
+	    android:layout_height="0dp"
+	    android:layout_weight="15"
+	    android:background="@color/black"
+	    android:orientation="horizontal" >
+
+	    <ImageButton
+	        android:id="@+id/status"
+	        style="android:attr/borderlessButtonStyle"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_margin="2dp"
+	        android:layout_weight="1"
+	        android:background="#00000000"
+	        android:contentDescription="@string/app_name"
+	        android:scaleType="fitXY"
+	        android:src="@drawable/juggler" />
+
+	    <ImageButton
+	        android:id="@+id/bag"
+	        style="android:attr/borderlessButtonStyle"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_marginBottom="2dp"
+	        android:layout_marginEnd="2dp"
+	        android:layout_marginRight="2dp"
+	        android:layout_marginTop="2dp"
+	        android:layout_weight="1"
+	        android:background="#00000000"
+	        android:contentDescription="@string/app_name"
+	        android:scaleType="fitXY"
+	        android:src="@drawable/bag" />
+
+	    <ImageButton
+	        android:id="@+id/mission"
+	        style="android:attr/borderlessButtonStyle"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_marginBottom="2dp"
+	        android:layout_marginEnd="2dp"
+	        android:layout_marginRight="2dp"
+	        android:layout_marginTop="2dp"
+	        android:layout_weight="1"
+	        android:background="#00000000"
+	        android:contentDescription="@string/app_name"
+	        android:scaleType="fitXY"
+	        android:src="@drawable/mission" />
+
+	    <ImageButton
+	        android:id="@+id/skill"
+	        style="android:attr/borderlessButtonStyle"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_marginBottom="2dp"
+	        android:layout_marginEnd="2dp"
+	        android:layout_marginRight="2dp"
+	        android:layout_marginTop="2dp"
+	        android:layout_weight="1"
+	        android:background="#00000000"
+	        android:contentDescription="@string/app_name"
+	        android:scaleType="fitXY"
+	        android:src="@drawable/magic" />
+	</LinearLayout>
+
+</LinearLayout>
